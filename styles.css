@@ -1,14 +1,17 @@
+/* Reset de margens e paddings, define fonte padrão e modelo de caixa */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+/* Suaviza a rolagem ao navegar pelas âncoras */
 html {
     scroll-behavior: smooth;
 }
 
+/* Definição de variáveis CSS para facilitar manutenção de cores */
 :root {
     --cor-primaria: #0D2596;
     --cor-secundaria: #390D96;
@@ -18,11 +21,13 @@ html {
     --vidro: rgba(255, 255, 255, 0.1);
 }
 
+/* Cor de fundo e texto do body */
 body {
     background-color: var(--escuro);
     color: var(--claro);
 }
 
+/* Barra de navegação fixa no topo com fundo semitransparente */
 .navegacao {
     position: fixed;
     top: 0;
@@ -32,6 +37,7 @@ body {
     padding: 1.5rem;
 }
 
+/* Estilo do menu da navbar */
 .menu {
     display: flex;
     justify-content: center;
@@ -39,6 +45,7 @@ body {
     gap: 1rem;
 }
 
+/* Links do menu */
 .menu-link {
     text-decoration: none;
     color: var(--claro);
@@ -47,6 +54,7 @@ body {
     padding: 0.5rem 0;
 }
 
+/* Linha animada que aparece abaixo do link ao passar o mouse */
 .menu-link::after {
     content: '';
     height: 2px;
@@ -62,6 +70,7 @@ body {
     width: 100%;
 }
 
+/* Estilo da seção principal com a foto e nome */
 .cabecalho {
     min-height: 60vh;
     padding: 110px 30px 50px 30px;
@@ -71,6 +80,7 @@ body {
     flex-direction: column;
 }
 
+/* Estilização da foto de perfil */
 .foto-perfil {
     width: 300px;
     height: 300px;
@@ -78,9 +88,10 @@ body {
     box-shadow: 0 0 20px rgba(79, 70, 229, 0.3);
     border-radius: 50%;
     border: 4px solid var(--vidro); 
-    animation: flutuar 5s ease-in-out infinite;
+    animation: flutuar 5s ease-in-out infinite; /* animação de flutuação */
 }
 
+/* Título principal (nome) */
 h1 {
     font-size: 3.5rem;
     color: var(--cor-primaria);
@@ -89,12 +100,14 @@ h1 {
     text-align: center;
 }
 
+/* Subtítulo com cargo */
 .cabecalho-sub-titulo {
     font-size: 1.5rem;
     text-align: center;
     color: var(--claro);
 }
 
+/* Seção Sobre */
 .sobre {
     padding: 80px 30px 50px 30px;
 }
@@ -106,6 +119,7 @@ h1 {
     margin-bottom: 20px;
 }
 
+/* Caixa com efeito de vidro */
 .sobre-caixa {
     padding: 2rem;
     max-width: 800px;
@@ -121,10 +135,12 @@ h1 {
     font-size: 1.3rem;
 }
 
+/* Seção Projetos */
 .projetos {
     padding: 80px 30px 50px 30px;
 }
 
+/* Grid responsivo dos cards */
 .projetos-caixa {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -133,6 +149,7 @@ h1 {
     margin: 0 auto;
 }
 
+/* Estilo dos cards de projetos */
 .projetos-card {
     background: rgba(255, 255, 255, 0.05);
     border-radius: 16px;
@@ -143,6 +160,7 @@ h1 {
     cursor: pointer;
 }
 
+/* Efeito ao passar o mouse sobre os cards */
 .projetos-card:hover {
     box-shadow: 0 10px 20px rgba(79, 70, 229, 0.2);
     transform: translateY(-10px) scale(1.03);    
@@ -173,6 +191,7 @@ h1 {
     margin-bottom: 5px;
 }
 
+/* Seção Contato */
 .contato {
     padding: 80px 30px 20px 30px;
 }
@@ -183,6 +202,7 @@ h1 {
     margin-bottom: 50px;
 }
 
+/* Estilização do formulário */
 .formulario-contato {
     max-width: 600px;
     margin: 0 auto;
@@ -193,6 +213,7 @@ h1 {
     border-radius: 16px;
 }
 
+/* Campos de input e textarea */
 .campo-form {
     width: 100%;
     padding: 1rem;
@@ -203,6 +224,7 @@ h1 {
     outline: none;
 }
 
+/* Destaque ao focar nos campos */
 .campo-form:focus {
     border-color: var(--cor-secundaria);
     box-shadow: 0 0 10px rgba(79, 70, 229, 0.3);
@@ -212,6 +234,7 @@ h1 {
     margin-bottom: 1.5rem;
 }
 
+/* Botão de envio */
 .botao-form {
     color: var(--claro);
     background: linear-gradient(45deg, var(--cor-primaria), var(--cor-secundaria));
@@ -229,6 +252,7 @@ h1 {
     box-shadow: 0 5px 15px rgba(79, 70, 229, 0.3); 
 }
 
+/* Fundo com partículas decorativas */
 .particulas {
     position: fixed;
     top: 0;
@@ -243,22 +267,24 @@ h1 {
         var(--mais-escuro);
 }
 
+/* Animação de flutuar */
 @keyframes flutuar {
     0%, 100% {
         transform: translateY(0);
     }
-
     50% {
         transform: translateY(-20px);
     }
 }
 
+/* Seção com ícones de redes sociais */
 .botoes-links {
     padding: 25px 30px 50px 30px;
     font-size: 1.8rem;
     text-align: center;
 }
 
+/* Links com ícones */
 a {
     text-decoration: none;
     color: var(--claro);
