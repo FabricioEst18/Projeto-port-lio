@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 html {
@@ -36,7 +36,7 @@ body {
     display: flex;
     justify-content: center;
     list-style: none;
-    gap: 1.5rem;
+    gap: 1rem;
 }
 
 .menu-link {
@@ -63,7 +63,8 @@ body {
 }
 
 .cabecalho {
-    min-height: 100vh;
+    min-height: 60vh;
+    padding: 110px 30px 50px 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -90,11 +91,12 @@ h1 {
 
 .cabecalho-sub-titulo {
     font-size: 1.5rem;
+    text-align: center;
     color: var(--claro);
 }
 
 .sobre {
-    padding: 6rem 2rem;
+    padding: 80px 30px 50px 30px;
 }
 
 .sobre-titulo {
@@ -120,7 +122,7 @@ h1 {
 }
 
 .projetos {
-    padding: 6rem 2rem;
+    padding: 80px 30px 50px 30px;
 }
 
 .projetos-caixa {
@@ -172,7 +174,7 @@ h1 {
 }
 
 .contato {
-    padding: 6rem 2rem;
+    padding: 80px 30px 20px 30px;
 }
 
 .contato-titulo {
@@ -252,10 +254,9 @@ h1 {
 }
 
 .botoes-links {
-    padding: 6rem 2rem;
+    padding: 25px 30px 50px 30px;
     font-size: 1.8rem;
     text-align: center;
-    margin-bottom: 20px;
 }
 
 a {
