@@ -51,7 +51,7 @@
             <!--Copiar essa div para colocar os próximos projetos -->
             <div class="projetos-card">
                 <img src="img/imagem chat em tempo real.jpg" alt="Projeto 1" class="projetos-imagem">
-                    <div class="caixa-textos-projeto">
+                <div class="caixa-textos-projeto">
                     <h3 class="info-projetos">Chat em Tempo Real</h3>
                     <p class="paragrafo-projetos">Um chat em tempo real desenvolvido com HTML, CSS e JavaScript.</p>
                 </div>
@@ -77,29 +77,12 @@
 
     <section class="botoes-links">
         <a href="https://github.com/FabricioEst18" target="_blank"><i class="bi bi-github"></i></a>
-        <a href="https://www.linkedin.com/in/fabr%C3%ADcioc%C3%A9sar/" target="_blank"><i class="bi bi-linkedin"></i></a>
+        <a href="https://www.linkedin.com/in/fabr%C3%ADcioc%C3%A9sar/" target="_blank"><i
+                class="bi bi-linkedin"></i></a>
         <a href="mailto:fabricioestevam46@gmail.com"><i class="bi bi-envelope"></i></a>
     </section>
 
-    <script>
-        function enviarWhats(event) {
-            event.preventDefault();
-
-            const nome = document.getElementById('nome').value;
-            const mensagem = document.getElementById('mensagem').value;
-            const telefone = '5531991726831';
-
-            const texto = `Olá! Me chamo ${nome}, ${mensagem}`
-            const msgFormatada = encodeURIComponent(texto)
-
-            const url = `https://api.whatsapp.com/send?phone=${telefone}&text=${msgFormatada}`;
-
-            console.log(url)
-
-            window.open(url, '_blank')
-        }
-
-    </script>
+    <script src="script.js"></script>
 
 </body>
 
