@@ -20,3 +20,6 @@ Caso queira conversar comigo, sugerir melhorias ou oportunidades:
 1. Clone o repositório:
    ```bash
    git clone https://github.com/FabricioEst18/meu-portfolio.git
+
+2.Acesse o portfólio por aqui:
+   https://fabricioest18.github.io/Projeto-port-lio/
